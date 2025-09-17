@@ -1,0 +1,223 @@
+/* ===========================
+   Global Styles
+=========================== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===========================
+   Header
+=========================== */
+img {
+  width: 300px;
+  margin: -20PX;
+}
+
+h1 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* ===========================
+   Form Styling
+=========================== */
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
+  margin-bottom: 25px;
+  transition: transform 0.2s;
+}
+
+form:hover {
+  transform: translateY(-2px);
+}
+
+form input, 
+form button {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+form input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 8px rgba(102, 126, 234, 0.5);
+}
+
+form button {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Search Bar
+=========================== */
+#search {
+  width: 85%;
+  max-width: 600px;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  font-size: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+#search:focus {
+  box-shadow: 0px 4px 14px rgba(102, 126, 234, 0.6);
+}
+
+/* ===========================
+   Table
+=========================== */
+table {
+  width: 95%;
+  max-width: 1250px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.2);
+}
+
+thead {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+}
+
+thead th {
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+tbody td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  color: #333;
+}
+
+tbody tr:hover {
+  background: #f3f6ff;
+  transition: 0.3s;
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+.actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  margin: 2px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+/* Edit Button */
+.actions button:first-child {
+  background: #ffb74d;
+  color: #fff;
+}
+
+.actions button:first-child:hover {
+  background: #f57c00;
+  transform: scale(1.05);
+}
+
+/* Delete Button */
+.actions button:last-child {
+  background: #e57373;
+  color: #fff;
+}
+
+.actions button:last-child:hover {
+  background: #d32f2f;
+  transform: scale(1.05);
+}
+
+/* ===========================
+   Responsive Design
+=========================== */
+@media (max-width: 900px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #search {
+    width: 90%;
+  }
+
+  table {
+    font-size: 12px;
+  }
+
+  thead th, tbody td {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+
+  /* Background Image */
+  background: url("MIT-CSN-01.jpg") no-repeat center center fixed;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
